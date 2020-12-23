@@ -1,4 +1,4 @@
-# Jargon Docs 
+# Getting Started 
 
 > Hey, thanks for checking out Jargon. You're one step closer to having better data :tada:
 
