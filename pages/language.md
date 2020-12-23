@@ -1,12 +1,19 @@
 # The Jargon Language 
 
+Jargon Domains are written in code - and for a couple of good reasons:
+- It's really quick to create and edit Domains
+- It's simple to learn, and there aren't a lot of complicated UI screens and buttons to learning
+- It's easy to work out and show what has changed between versions
+
+?> Don't be afraid if you have no experience writing code - Jargon is very quick and simple to understand. You can get more information by looking at the documentation for the [Jargon Editor](/pages/the_jargon_editor) 
+
+
 ## A Simple Example
 
-Here's a simple Domain about Drivers and their Cars:
+Here is a Domain with only two Classes: Driver and Car.
+Drivers have an Id and are assigned a Car, which has a registration number.
 
-?> Don't be afraid if you have no experience writing code - Jargon is very quick and simple to understand, plus there are heaps of existing domains you can look at to learn more.
-
-The **Colours** are important, but ignore them for now. We'll cover them in [Colours and Class Types](/pages/language?id=colours-and-class-types)
+> The **Colours** you can see below are important, but ignore them for now. We'll cover them in [Colours and Class Types](/pages/language?id=colours-and-class-types)
 
 ```jargon
 
@@ -19,16 +26,16 @@ Car
  registration:Text
 ```
 
-If you typed that into the Jargon editor, you'll be presented with a diagram of your domain, which will look something like this:
+The [Jargon Editor](/pages/the_jargon_editor) will create an image of this Domain for you, which will look something like this:
 
 ![Sample diagram of example class domain](../static/media/a_simple_example.png)
 
-This example created two Classes, each with a couple of Properties.
+
 
 
 ## Classes
 
-You create a class by typing it on it's own line, without any indendation.
+You create a Class by typing the name on it's own line, without any indendation.
 
 ```jargon
 
@@ -40,7 +47,9 @@ Animal
 Person
 ```
 
-You can also create a class that is a sub-Class of another Class. A sub-Class will have all the Properties of it's parent Class.
+You can also create a class that is a sub-Class of another Class, by adding ':' and the super-Class name.
+
+A sub-Class will have all the Properties of it's parent Class.
 
 ```jargon
 
@@ -75,36 +84,7 @@ Person
 ```
 
 
-### Importing from other Domains
-
-You can import Classes or Properties from other Domains into yours, but only after you have [Imported](/page/imports) it first.
-
-Each domain you Import is given an Alias, which ensures that you don't have any problems if you're importing something with the same name as one of your Classes.
-
-Assuming you had imported a Domain with the alias of 'payroll', you could use either a Class or a Property from that Domain by:
-
-
-```jargon
-i:mock.mock:mock as payroll
----
-Employee
-	^number:Numeric
-	wagePlan:payroll.Wage
-	scheme:payroll.Scheme.legislation
-```
-```jargon
-
----
-Wage
- quantity:Numeric
- frequencyDays:Numeric
-    
-Scheme
-    legislation:Text
-```
-
-
-### Identifiers
+## Identifiers
 
 Some Properties of a Class can be used to uniquely adderss an instance of that Class from others.
 
@@ -133,7 +113,7 @@ SpreadsheetCell
 
 ?> Identifiers, and Addressability are really important to Jargon, and successfully using Domains from others. 
 
-### Arrays
+## Arrays
 
 A Class can have an array of a property, by placing [] after the Property's Type:
 
@@ -144,13 +124,45 @@ Person
     luckyNumbers:Numeric[]
 ```
 
+## Importing from other Domains
+
+You can import Classes or Properties from other Domains into yours, but only after you have [Imported](/pages/what_is_importing) it first.
+
+Each domain you Import is given an Alias, which ensures that you don't have any problems if you're importing something with the same name as one of your Classes.
+
+Assuming you had imported a Domain with the alias of 'payroll', you could use either a Class or a Property from that Domain by:
+
+
+```jargon
+i:mock.mock:mock as payroll
+---
+Employee
+	^number:Numeric
+	wagePlan:payroll.Wage
+	scheme:payroll.Scheme.legislation
+```
+
+
+***Payroll Domain***
+```jargon
+
+---
+Wage
+ quantity:Numeric
+ frequencyDays:Numeric
+    
+Scheme
+    legislation:Text
+```
+
+
 ## Supported Data Types
 
 Jargon supports a very limited number of DataTypes that your Properties can have - and that's deliberate.
 
 Overloading business-rules and meaning into DataTypes makes it really difficult to later extract that information and do something useful with it.
 
-Jargon handles this through [Business Rules](/pages/rules.md).
+Jargon handles this through [Business Rules](/pages/business_rules).
 
 ```jargon
 c:SomeListOfValues
@@ -165,7 +177,7 @@ DataTypes
 
 > Hey, what's that stuff after Code?
 >
-> Jargon manages Codes a little differently than you might be used to. The set of valid values a Property can take is often called Reference Data - and it's usually a finite set of values - 01, CUR, AUS, ... . The problem with this approach is that it requires everyone you share data with to accept and use your choice of representing that Reference Data. You can read more about how Jargon does this better with [Code Tables](/pages/codeTables)
+> Jargon manages Codes a little differently than you might be used to. The set of valid values a Property can take is often called Reference Data - and it's usually a finite set of values - 01, CUR, AUS, ... . The problem with this approach is that it requires everyone you share data with to accept and use your choice of representing that Reference Data. You can read more about how Jargon does this better with [Code Tables](/pages/code_tables)
 
 
 ## Colours and Class Types
@@ -184,7 +196,6 @@ There are three types of Class in Jargon, each with a different approach to how 
 Entity
  ^identifIier:Text
  values:ValueObject[]
-
  
 ValueObject
  notAnIdentifier:Text
@@ -199,7 +210,7 @@ Aggregate
 
 ## Entity
 
-An Entity is a Class that has Identifiers, and is represented by the colour Blue.
+An Entity is a Class that has Identifiers, and is represented by the colour <span class="jargon_Entity" style="font-weight:bold;">Blue</span>.
 
 ```jargon
 c:Suits
@@ -213,7 +224,7 @@ If you had a deck of playing cards, you can Address every single card in the dec
 
 ## ValueObject
 
-A ValueObject is a Class that has no Identifiers, and is represented by the colour Green.
+A ValueObject is a Class that has no Identifiers, and is represented by the colour <span class="jargon_ValueObject" style="font-weight:bold;">Green</span>.
 
 There is no way to uniquely address a ValueObject.
 
@@ -235,7 +246,7 @@ Transaction:
 
 ## Aggregate 
 
-An Aggregate is a Class that has no Identifiers of it's own and derrives it's business-identity from it's child Properties, and is represented by the colour Pink.
+An Aggregate is a Class that has no Identifiers of it's own and derrives it's business-identity from it's child Properties, and is represented by the colour <span class="jargon_Aggregate" style="font-weight:bold;">Pink</span>.
 
 
 ```jargon
