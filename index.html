@@ -8,10 +8,10 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
 
-    <title>Docsify Boilerplate</title>
+    <title>Jargon Docs</title>
     <meta
       name="description"
-      content="Hey congrats, you are a one step ahead of building your own docs-site/ blog"
+      content="Documentation for Jargon"
     />
 
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
@@ -75,6 +75,7 @@
             code: function (code, lang) {
                 if(lang === "jargon"){
                     var model = window.parser.parseFrontMatterInput(code);
+					console.log(model)
                     var syntax = window.parser.renderSyntax(model, false)
                     return '<div class="jargon_code">' + syntax + '</div>'
                 }
@@ -89,7 +90,7 @@
             },
           },
         },
-        name: "Docsify Boilerplate",
+        name: "Jargon Docs",
         el: "#app-location",
         coverpage: false,
 

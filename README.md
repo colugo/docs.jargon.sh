@@ -1,56 +1,30 @@
-# Docsify Boilerplate Homepage
+# Jargon Docs 
 
-> Hey congrats, you are a one step ahead of building your own docs-site/ blog :tada:
+> Hey, thanks for checking out Jargon. You're one step closer to having better data :tada:
 
-[![Made with Docsify](https://img.shields.io/badge/made_with-docsify.js-blue.svg)](https://docsify.js.org/)
 
-## What is this boilerplate all about?
-```jargon
-c:ANZIC
-i:mock.mock:mock as party
-i:mock.mock:mock1 as fake
----
-Organisation:
- ^abn:Numeric
- industryClassification:Code(ANZIC)[]
- name:OrganisationName
- foo:party.fake
- bar:fake.fake
- coo:not.fake
+## What it is 
 
-OrganisationName:
- name:Text[]
-```
+Jargon is a platform to create, share and reuse data models. It's inspired by a popular Software Engineering approach to breaking down complexity, called  [Domain-Driven-Design](https://en.m.wikipedia.org/wiki/Domain-driven_design), and shares many of the same concepts.
 
-```jargon
 
----
-Entity
- ^identifIier:Text
- values:ValueObject[]
- aggregate:Aggregate
- 
- 
-ValueObject
- notAnIdentifier:Text
- 
-Aggregate
- getsIdentifiersFrom:Entity
-```
+## Features
+- Automatic [classification of Classes](/pages/language?id=colours-and-class-types) into different Addressability strategies 
+- Two-dimensional Code Tables for Reference Data 
+- Release and Version Management
+- Import Classes and Data-Definitions from other Domains
 
-Get the right tool to get started on writing documentation for your app/ service or your own blog.
+
+## Examples
+
+- example 1
+- example 2
+
+You can also look at the most imported domains [here](https://jargon.sh/browse)
+
 
 ?> This boilerplate will give you ready made and customizable code, ready to deploy
 
-## Requirements
-
-- Local Development(Any one of following would suffice the need)
-  - NodeJS with `yarn` or `npm` for local host
-  - Any local server that can host files
-  - VS Code live host
-- Deployment
-  - Netlify or gh-pages or other as per your preferences
 
 ---
 
-Made in :heart: with Docsify
