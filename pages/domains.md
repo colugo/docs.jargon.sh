@@ -1,7 +1,5 @@
 # What is a Domain 
 
-## About Domains
-
 Jargon is inspired by a popular Software Engineering approach to breaking down complexity, called  [Domain-Driven-Design](https://en.m.wikipedia.org/wiki/Domain-driven_design), and shares many of the same concepts.
 
 Under Domain-Driven-Design, a Domain is;
