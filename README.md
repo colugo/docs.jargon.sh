@@ -16,8 +16,8 @@ Jargon is a platform to create, share and reuse data models. It's inspired by a 
 ## Features
 - Automatic [classification of Classes](/pages/language?id=colours-and-class-types) into different Addressability strategies 
 - Two-dimensional Code Tables for Reference Data 
-- Release and Version Management
-- Import Classes and Data-Definitions from other Domains
+- [Release and Version Management](pages/intro_to_releases_and_importing?id=about-releases)
+- [Import Classes and Data-Definitions from other Domains](/pages/intro_to_releases_and_importing?id=about-importing)
 
 
 ## Examples

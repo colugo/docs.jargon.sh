@@ -10,9 +10,7 @@
  - [Creating a Domain](pages/creating_a_domain)
 - Releases and Importing
  - [Introduction to Releases and Importing](pages/intro_to_releases_and_importing)
- - [Unpublishing a Release](pages/unpublishing)
  - [Creating a Release](pages/creating_a_release)
- - [How to Find Domains](pages/finding_domains)
 - Using the Jargon Platform
   - [The Jargon Editor](pages/the_jargon_editor)
   - [Data Definitions](pages/data_definitions)
