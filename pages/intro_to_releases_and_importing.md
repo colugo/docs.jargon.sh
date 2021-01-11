@@ -38,4 +38,12 @@ For more information, you can read the official documentation on [Semantic Versi
 
 ## About Importing
 
+An **Import** is how you reuse something from a Domain in your own. As discussed above, any Domain that you wish to Import from must have already published at lease one Release.
+
+You cannot Import the 'bleeding-edge' version of a Domain.
+
+### Why Import?
+
+Importing a Domain allows you to use Classes and Properties from that Domain in yours. It means that you don't have to reinvent the wheel, and increasese the interoperability of your Domains with others.
+
 ---

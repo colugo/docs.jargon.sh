@@ -109,7 +109,8 @@ SpreadsheetCell
 
 > Woah! Why did all those Classes turn blue?
 > 
-> A class that has Identifiers becomes what Jargon calls an 'Entity'. We'll cover them soon in [Colours and Class Types](/pages/language?id=colours-and-class-types), but  
+> A class that has Identifiers becomes what Jargon calls an 'Entity'. We'll cover them soon in [Colours and Class Types](/pages/language?id=colours-and-class-types)
+
 
 ?> Identifiers, and Addressability are really important to Jargon, and successfully using Domains from others. 
 
@@ -126,7 +127,7 @@ Person
 
 ## Importing from other Domains
 
-You can import Classes or Properties from other Domains into yours, but only after you have [Imported](/pages/what_is_importing) it first.
+You can import Classes or Properties from other Domains into yours, but only after you have [Imported](/pages/intro_to_releases_and_importing?id=about-importing) it first.
 
 Each domain you Import is given an Alias, which ensures that you don't have any problems if you're importing something with the same name as one of your Classes.
 
