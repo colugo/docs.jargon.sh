@@ -3,7 +3,6 @@
 - [Home](/)
 - Getting Started 
  - [Setting up your account](pages/setting_up_account)
- - [Managing your account](/pages/managing_account)
 - Concepts and the Language
  - [What is a Domain](pages/domains)
  - [The Jargon Language](pages/language)
