@@ -13,7 +13,7 @@ To edit, delete or view Code Tables:
 ## Creating a new Code Table
 
 1. Click 'Add a code table' link in the Code Table Sidebar
-2. Enter a name for the code table. Only Letters and Numbers are allowed
+2. Enter a name for the code table. Only letters, numbers, and undersocres '_' are allowed
 3. Find the new Code Table in the list in the Code Table Sidebar, and click its pencil button
 4. You can change the Code Table's name by chaning the input box at the top
 5. Click the cell you want to change and start typing. If you type a value into the last row or collumn, a new ro or collumn will be added at the end. Keep adding new rows or collumns as you need them.

@@ -17,7 +17,7 @@ You need to create a Domain before you can start to model and describe it.
 ![Showing the avatar icon in the top-right corner](../static/media/new_domain.png ':size=400')
 
 4. In the Create a new Domain form, fill in the following:
- - **Domain Name:** This name will be visible ot others and forms part of how your domains are imported. Can contain letters and numbers only. **Domain Names cannot be changed**. 
+ - **Domain Name:** This name will be visible ot others and forms part of how your domains are imported. Can contain letters, numbers, and underscores '_' only. **Domain Names cannot be changed**. 
  - **Description:** This is the initial short description for your domain. It can't be changed until you publish a new release 
 5. Click Create Domain
 
