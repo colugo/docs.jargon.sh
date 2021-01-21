@@ -44,6 +44,6 @@ You cannot Import the 'bleeding-edge' version of a Domain.
 
 ### Why Import?
 
-Importing a Domain allows you to use Classes and Properties from that Domain in yours. It means that you don't have to reinvent the wheel, and increasese the interoperability of your Domains with others.
+Importing a Domain allows you to use Classes, Properties, and Code Tables from that Domain in yours. It means that you don't have to reinvent the wheel, and increasese the interoperability of your Domains with others.
 
 ---

@@ -136,11 +136,13 @@ Assuming you had imported a Domain with the alias of 'payroll', you could use ei
 
 ```jargon
 i:mock.mock:mock as payroll
+ic:payroll.EmployeeTypes
 ---
 Employee
 	^number:Numeric
 	wagePlan:payroll.Wage
 	scheme:payroll.Scheme.legislation
+    type:Code(payroll.EmployeeTypes)
 ```
 
 

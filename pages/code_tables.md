@@ -31,4 +31,11 @@ To edit, delete or view Code Tables:
 
 1. Find the new Code Table in the list in the Code Table Sidebar, and click its pencil button
 
+## Importing from CSV
 
+Instead of manually typing and managing your code tables, you can import them from a CSV file - but only with a ',' delimeter.
+
+1. Find the Code Table in the list in the Code Table Sidebar, and click its pencil button
+2. Paste your CSV data into the text box above the code table
+3. Press the 'Parse' button
+4. If your data is well-formed, then the CSV data will overwrite the data in the table
