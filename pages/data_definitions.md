@@ -14,6 +14,21 @@ To write or view Data Definitions:
 4. Write your definition here
 5. Definitions will be saved when you save the Domain
 
+## Key - Value pairs
+
+Definitions can also contain key-value pairs of informaion.
+
+Any line that starts with '[' and matches the pattern [key]=value will be stored as a key-value.
+
+You can mix them with the textual-definition, but it's probably a good idea to group them all at the end.
+
+Here's an example:
+
+>
+> [key]=value
+>
+> [key.with.hierarchy]=value
+> 
 
 ## Writing Data Definitions
 
