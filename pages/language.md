@@ -158,6 +158,23 @@ Scheme
     legislation:Text
 ```
 
+### The 'this' alias
+
+Jargon allows you to refrence Clases and Properties from the current Domain as if it was an imported Domain.
+
+Here's how that works:
+
+```jargon
+
+---
+Common
+ senderRef:Text
+
+
+CTOReceival
+ ^senderRef:this.Common.senderRef
+
+```
 
 ## Supported Data Types
 
@@ -175,8 +192,15 @@ DataTypes
     anyText:Text
     trueOrFalse:Indicator
     selectFromAList:Code(SomeListOfValues)
+    unwantedPropertyFromSuperClass:Unset
 
 ```
+
+> Unset?
+>
+> There may be circumstances when you've imported a super class from another domain that has properties you don't want.
+> You can either re-declare them, by setting them to something else, or you can give them the datatype of 'Unset' which removes them from the class completely.
+>
 
 > Hey, what's that stuff after Code?
 >
@@ -256,6 +280,7 @@ An Aggregate is a Class that has no Identifiers of it's own and derrives it's bu
 
 ---
 Transaction:
+ #hideClass
  value:Numeric
  log:LogEntry
 
@@ -265,5 +290,27 @@ LogEntry:
 
 ```
 
+# Processing Instructions
+
+Jargon supports several processing instructions that don't change the semantics of your domain, but influence how the data model diaram is generated.
+
+Processing instructions look a lot like members, except they all start with a #
+
+
+```jargon
+
+---
+Shipment:
+ #important
+ ^id:Numeric
+
+```
+
+Here's a list of the currently supported processing instructions:
+
+- **#important** - highlights this class, making it stand out from the rest of the classes
+- **#additionalRows:n** - adds n additional rows to the class, making it vertically larger
+- **#shortImports** - removes some of the prefix information on imported properties, making the classes less short and wide 
+- **#hideClass** - removes this class from the diagram. Useful for any mechanical classes that don't add to the understanding of the Domain 
 
 ---

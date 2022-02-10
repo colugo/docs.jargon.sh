@@ -30,6 +30,20 @@ Here's an example:
 > [key.with.hierarchy]=value
 > 
 
+## Jargon recognised Key - Value pairs
+
+Jargon recognises some specific Key - Value pairs that impact different parts of your Domain, or your artefacts.
+
+Recognised keys are highlighted in yellow.
+
+Here is a list, and what they do:
+
+- **[jargon.codeColumn]=name** - if this property uses a Code Table, this allows you to select the column name to use in OpenAPI specifications
+- **[jargon.extraEnums]=x,y,z** - Adds extra enumeration values to this usage of a CodeTable. Useful when you are using an imported CodeTable, and you need to add some mechanical values, such as 'None', or 'n/a'
+- **[oas.readOnly]=true** - adds the 'readOnly=true' to this property in an OpenAPI specification
+- **[oas.writeOnly]=true** - adds the 'writeOnly=true' to this property in an OpenAPI specification
+- **[oas.required]=true** - adds the 'required=true' to this property in an OpenAPI specification
+
 ## Writing Data Definitions
 
 Every Class's Property in your Domain can have precise Definitions written to explain what it is, what it's for, how to use it, and guidance on how to correctly populate it.
