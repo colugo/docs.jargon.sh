@@ -30,6 +30,38 @@
 
 	<style>
 
+
+section.cover.show{
+    opacity:0.9;
+}
+
+section.cover .cover-main>p a{
+    background:white !important;
+    color:#00a2ed !important;
+}
+
+.mask{
+    display:none;
+}
+
+.cover-main H1 span{
+    color:white !important;
+    font-size:2em
+}
+
+.cover-main{
+    position:static !important;
+    color:white;
+}
+
+.cover-main IMG{
+    max-width:500px;
+    width:50vw;
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+
 OL LI{
     padding-bottom:12px;
 }
@@ -113,7 +145,7 @@ OL LI{
         },
         name: "Jargon Docs",
         el: "#app-location",
-        coverpage: false,
+        coverpage: true,
 
         // if no auto-scroll to default page and stick to cover page itself
         // onlyCover: true,
