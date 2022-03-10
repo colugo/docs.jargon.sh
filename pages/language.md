@@ -189,7 +189,13 @@ c:SomeListOfValues
 ---
 DataTypes
     anyTypeOfNumber:Numeric
+    integer:Integer
+    withDecimalPoint:Decimal
     anyText:Text
+    date:Date
+    dateWithTime:DateTime
+    websiteURI:URI
+    email:Email
     trueOrFalse:Indicator
     selectFromAList:Code(SomeListOfValues)
     unwantedPropertyFromSuperClass:Unset
