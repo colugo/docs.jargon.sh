@@ -40,6 +40,7 @@ Here is a list, and what they do:
 
 - **[jargon.codeColumn]=name** - if this property uses a Code Table, this allows you to select the column name to use in OpenAPI specifications
 - **[jargon.extraEnums]=x,y,z** - Adds extra enumeration values to this usage of a CodeTable. Useful when you are using an imported CodeTable, and you need to add some mechanical values, such as 'None', or 'n/a'
+- **[oas.pathName]=true** - changes the name of this resource in API paths to the verbatim value provided 
 - **[oas.readOnly]=true** - adds the 'readOnly=true' to this property in an OpenAPI specification
 - **[oas.writeOnly]=true** - adds the 'writeOnly=true' to this property in an OpenAPI specification
 - **[oas.required]=true** - adds the 'required=true' to this property in an OpenAPI specification
