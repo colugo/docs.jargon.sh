@@ -46,6 +46,13 @@ Here is a list, and what they do:
 - **[oas.required]=true** - adds the 'required=true' to this property in an OpenAPI specification
 - **[oas.minLength]=5** - adds 'minLength=5' to this property in an OpenAPI specification
 - **[oas.maxLength]=5** - adds 'maxLength=5' to this property in an OpenAPI specification
+- **[oas.maximum]=5** - adds 'maximum=5' to this property in an OpenAPI specification
+- **[oas.exclusiveMaximum]=5** - adds 'exclusiveMaximum=5' to this property in an OpenAPI specification
+- **[oas.minimum]=5** - adds 'minimum=5' to this property in an OpenAPI specification
+- **[oas.maxLength]=5** - adds 'maxLength=5' to this property in an OpenAPI specification
+- **[oas.maxItems]=5** - adds 'maxItems=5' to this property in an OpenAPI specification
+- **[oas.minItems]=5** - adds 'minItems=5' to this property in an OpenAPI specification
+
 
 ## Writing Data Definitions
 
