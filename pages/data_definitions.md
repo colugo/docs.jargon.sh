@@ -44,6 +44,8 @@ Here is a list, and what they do:
 - **[oas.readOnly]=true** - adds the 'readOnly=true' to this property in an OpenAPI specification
 - **[oas.writeOnly]=true** - adds the 'writeOnly=true' to this property in an OpenAPI specification
 - **[oas.required]=true** - adds the 'required=true' to this property in an OpenAPI specification
+- **[oas.minLength]=5** - adds 'minLength=5' to this property in an OpenAPI specification
+- **[oas.maxLength]=5** - adds 'maxLength=5' to this property in an OpenAPI specification
 
 ## Writing Data Definitions
 
