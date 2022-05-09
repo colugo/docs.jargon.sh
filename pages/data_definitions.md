@@ -52,6 +52,7 @@ Here is a list, and what they do:
 - **[oas.maxLength]=5** - adds 'maxLength=5' to this property in an OpenAPI specification
 - **[oas.maxItems]=5** - adds 'maxItems=5' to this property in an OpenAPI specification
 - **[oas.minItems]=5** - adds 'minItems=5' to this property in an OpenAPI specification
+- **[oas.mediaType]=multipart/form-data** - changes the media type for this class, when it's in the body of a request. 
 
 
 ## Writing Data Definitions
