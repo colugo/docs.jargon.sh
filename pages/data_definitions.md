@@ -54,6 +54,7 @@ Here is a list, and what they do:
 - **[oas.minItems]=5** - adds 'minItems=5' to this property in an OpenAPI specification
 - **[oas.mediaType]=multipart/form-data** - changes the media type for this class, when it's in the body of a request. 
 - **[oas.queryParamName]=x** - sets the name of this property, when used as an API query parameter. 
+- **[oas.compoundKeyName]=x** - changes the name of the compound key, if this class has multiple identifiers. 
 
 
 ## Writing Data Definitions
