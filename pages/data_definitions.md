@@ -55,6 +55,7 @@ Here is a list, and what they do:
 - **[oas.mediaType]=multipart/form-data** - changes the media type for this class, when it's in the body of a request. 
 - **[oas.queryParamName]=x** - sets the name of this property, when used as an API query parameter. 
 - **[oas.compoundKeyName]=x** - changes the name of the compound key, if this class has multiple identifiers. 
+- **[oas.abstract]=true** - If this is a super class, replaces the schema content with oneOf for each of the subClasses. 
 
 
 ## Writing Data Definitions
