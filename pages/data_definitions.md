@@ -57,6 +57,7 @@ Here is a list, and what they do:
 - **[oas.compoundKeyName]=x** - changes the name of the compound key, if this class has multiple identifiers. 
 - **[oas.abstract]=true** - If this is a super class, replaces the schema content with oneOf for each of the subClasses. 
 - **[oas.securityScopeAcronym]=xx** - Creates a security scope for this resource, using the provided acronym. 
+- **[oas.x-enum-descriptions]=name** - if this property uses a Code Table, this allows you to select the column name to use in OpenAPI specifications for the x-enum-descriptions property
 
 
 ## Writing Data Definitions
