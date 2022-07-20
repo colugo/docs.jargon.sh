@@ -319,4 +319,40 @@ Here's a list of the currently supported processing instructions:
 - **#shortImports** - removes some of the prefix information on imported properties, making the classes less short and wide 
 - **#hideClass** - removes this class from the diagram. Useful for any mechanical classes that don't add to the understanding of the Domain 
 
+
+Here's a list of the currently supported processing instructions:
+
+- **#important** - highlights this class, making it stand out from the rest of the classes
+- **#additionalRows:n** - adds n additional rows to the class, making it vertically larger
+- **#shortImports** - removes some of the prefix information on imported properties, making the classes less short and wide 
+- **#hideClass** - removes this class from the diagram. Useful for any mechanical classes that don't add to the understanding of the Domain 
+
+# Comments 
+
+You can comment out parts of the model, or leave notes within your model, by using comments.
+
+
+Comments either operate on an entire line, by starting that line with '//'.
+You can also comment out many lines, by using /* and */
+
+
+
+<div class="jargon_code"><pre><code>
+<span class="jargon_comment">// Comments aren't included in your models</span>
+<span class="jargon_class jargon_Entity">Shipment</span>
+ <span class="jargon_processingInstruction">#important</span>
+ ^id:<span class="jargon_Identifier">Numeric</span>
+  <span class="jargon_comment">//date:Date</span>
+
+<span class="jargon_comment">\/\*</span>
+<span class="jargon_comment">multiple lines</span>
+<span class="jargon_comment">can be commented out</span>
+<span class="jargon_comment">like this</span>
+<span class="jargon_comment">\*\/</span>
+
+</code>
+</pre>
+</div>
+
+
 ---
