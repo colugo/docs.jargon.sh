@@ -58,6 +58,7 @@ Here is a list, and what they do:
 - **[oas.abstract]=true** - If this is a super class, replaces the schema content with oneOf for each of the subClasses. 
 - **[oas.securityScopeAcronym]=xx** - Creates a security scope for this resource, using the provided acronym. 
 - **[oas.x-enum-descriptions]=name** - if this property uses a Code Table, this allows you to select the column name to use in OpenAPI specifications for the x-enum-descriptions property
+- **[jargon.reference]=true** - Treats a child property, which is a class (or an array of classes) as a reference pointer to that class, using the child's class ID. 
 
 
 ## Writing Data Definitions
