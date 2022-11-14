@@ -37,28 +37,29 @@ Jargon recognises some specific Key - Value pairs that impact different parts of
 Recognised keys are highlighted in yellow.
 
 Here is a list, and what they do:
+- **[jargon.required]=true** - Makes this property required. Also adds the 'required=true' to this property in an OpenAPI specification
+- **[jargon.reference]=true** - Treats a child property, which is a class (or an array of classes) as a reference pointer to that class, using the child's class ID. 
+- **[jargon.extraEnums]=x,y,z** - Adds extra enumeration values to this usage of a CodeTable. Useful when you are using an imported CodeTable, and you need to add some mechanical values, such as 'None', or 'n/a'
+- **[jargon.codeColumn]=name** - if this property uses a Code Table, this allows you to select the name of the column that is used 
 
-- **[oas.extraEnums]=x,y,z** - Adds extra enumeration values to this usage of a CodeTable. Useful when you are using an imported CodeTable, and you need to add some mechanical values, such as 'None', or 'n/a'
-- **[oas.codeColumn]=name** - if this property uses a Code Table, this allows you to select the column name to use in OpenAPI specifications
+- **[jargon.maxLength]=5** - adds 'maxLength=5' to this property in an OpenAPI specification, and other outputs
+- **[jargon.minLength]=5** - adds 'minLength=5' to this property in an OpenAPI specification, and other outputs
+- **[jargon.maximum]=5** - adds 'maximum=5' to this property in an OpenAPI specification, and other outputs
+- **[jargon.minimum]=5** - adds 'minimum=5' to this property in an OpenAPI specification, and other outputs
+- **[jargon.maxItems]=5** - adds 'maxItems=5' to this property in an OpenAPI specification, and other outputs
+- **[jargon.minItems]=5** - adds 'minItems=5' to this property in an OpenAPI specification, and other outputs
+
+- **[oas.mediaType]=multipart/form-data** - changes the media type for this class, when it's in the body of a request. 
+- **[oas.exclusiveMaximum]=5** - adds 'exclusiveMaximum=5' to this property in an OpenAPI specification
+- **[oas.exclusiveMinimium]=5** - adds 'exclusiveMinimium=5' to this property in an OpenAPI specification
 - **[oas.pathName]=newPathChunk** - changes the name of this resource in API paths to the verbatim value provided 
 - **[oas.readOnly]=true** - adds the 'readOnly=true' to this property in an OpenAPI specification
 - **[oas.writeOnly]=true** - adds the 'writeOnly=true' to this property in an OpenAPI specification
-- **[oas.required]=true** - adds the 'required=true' to this property in an OpenAPI specification
-- **[oas.minLength]=5** - adds 'minLength=5' to this property in an OpenAPI specification
-- **[oas.maxLength]=5** - adds 'maxLength=5' to this property in an OpenAPI specification
-- **[oas.maximum]=5** - adds 'maximum=5' to this property in an OpenAPI specification
-- **[oas.exclusiveMaximum]=5** - adds 'exclusiveMaximum=5' to this property in an OpenAPI specification
-- **[oas.minimum]=5** - adds 'minimum=5' to this property in an OpenAPI specification
-- **[oas.maxLength]=5** - adds 'maxLength=5' to this property in an OpenAPI specification
-- **[oas.maxItems]=5** - adds 'maxItems=5' to this property in an OpenAPI specification
-- **[oas.minItems]=5** - adds 'minItems=5' to this property in an OpenAPI specification
-- **[oas.mediaType]=multipart/form-data** - changes the media type for this class, when it's in the body of a request. 
 - **[oas.queryParamName]=x** - sets the name of this property, when used as an API query parameter. 
 - **[oas.compoundKeyName]=x** - changes the name of the compound key, if this class has multiple identifiers. 
 - **[oas.abstract]=true** - If this is a super class, replaces the schema content with oneOf for each of the subClasses. 
 - **[oas.securityScopeAcronym]=xx** - Creates a security scope for this resource, using the provided acronym. 
 - **[oas.x-enum-descriptions]=name** - if this property uses a Code Table, this allows you to select the column name to use in OpenAPI specifications for the x-enum-descriptions property
-- **[jargon.reference]=true** - Treats a child property, which is a class (or an array of classes) as a reference pointer to that class, using the child's class ID. 
 
 
 ## Writing Data Definitions
