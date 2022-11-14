@@ -37,6 +37,7 @@ Jargon recognises some specific Key - Value pairs that impact different parts of
 Recognised keys are highlighted in yellow.
 
 Here is a list, and what they do:
+- **[jargon.aggregation]=true** - When used on a property that is a Class, aggregate up all the type's properties to the parent 
 - **[jargon.required]=true** - Makes this property required. Also adds the 'required=true' to this property in an OpenAPI specification
 - **[jargon.reference]=true** - Treats a child property, which is a class (or an array of classes) as a reference pointer to that class, using the child's class ID. 
 - **[jargon.extraEnums]=x,y,z** - Adds extra enumeration values to this usage of a CodeTable. Useful when you are using an imported CodeTable, and you need to add some mechanical values, such as 'None', or 'n/a'
