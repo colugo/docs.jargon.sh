@@ -41,8 +41,7 @@ Here is a list, and what they do:
 - **[jargon.required]=true** - Makes this property required. Also adds the 'required=true' to this property in an OpenAPI specification
 - **[jargon.reference]=true** - Treats a child property, which is a class (or an array of classes) as a reference pointer to that class, using the child's class ID. 
 - **[jargon.extraEnums]=x,y,z** - Adds extra enumeration values to this usage of a CodeTable. Useful when you are using an imported CodeTable, and you need to add some mechanical values, such as 'None', or 'n/a'
-- **[jargon.codeColumn]=name** - if this property uses a Code Table, this allows you to select the name of the column that is used 
-
+- **[oas.codeColumn]=name** - if this property uses a Code Table, this allows you to select the name of the column that is used 
 - **[jargon.maxLength]=5** - adds 'maxLength=5' to this property in an OpenAPI specification, and other outputs
 - **[jargon.minLength]=5** - adds 'minLength=5' to this property in an OpenAPI specification, and other outputs
 - **[jargon.maximum]=5** - adds 'maximum=5' to this property in an OpenAPI specification, and other outputs
