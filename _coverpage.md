@@ -9,4 +9,4 @@
 [Get Started](#home)
 
 
-![](/static/img/jargon_color_wall.svg)
+![](/static/img/docs.svg)
