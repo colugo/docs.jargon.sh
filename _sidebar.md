@@ -3,6 +3,7 @@
 - [Home](/)
 - Getting Started 
  - [Setting up your account](pages/setting_up_account)
+ - [Public and Private Domains](pages/public_and_private_domains)
 - Concepts and the Language
  - [What is a Domain](pages/domains)
  - [The Jargon Language](pages/language)
