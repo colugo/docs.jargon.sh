@@ -131,7 +131,6 @@ OL LI{
             code: function (code, lang) {
                 if(lang === "jargon"){
                     var model = window.parser.parseFrontMatterInput(code);
-					console.log(model)
                     var syntax = window.parser.renderSyntax(model, false)
                     return '<div class="jargon_code">' + syntax + '</div>'
                 }

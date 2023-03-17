@@ -224,17 +224,18 @@ There are three types of Class in Jargon, each with a different approach to how 
 ### Example
 
 ```jargon
-
+r:Aggregate
 ---
+Aggregate
+ controllsAccessTo:Entity
+
 Entity
  ^identifIier:Text
  values:ValueObject[]
- 
+
 ValueObject
  notAnIdentifier:Text
- 
-Aggregate
- getsIdentifiersFrom:Entity
+
 ```
 
 ![Sample diagram of example with all class types](../static/media/ddd_types.png)
@@ -279,16 +280,16 @@ Transaction:
 
 ## Aggregate 
 
-An Aggregate is a Class that has no Identifiers of it's own and derrives it's business-identity from it's child Properties, and is represented by the colour <span class="jargon_Aggregate" style="font-weight:bold;">Pink</span>.
+An Aggregate is a Class that controls access to other Classes. Jargon will classify any class that is the root of an API path as an Aggregate , and is represented by the colour <span class="jargon_Aggregate" style="font-weight:bold;">Pink</span>.
 
 
 ```jargon
-
+r:Transaction
 ---
 Transaction:
- #hideClass
+ ^timeStamp:DateTime
  value:Numeric
- log:LogEntry
+ log:LogEntry[]
 
 LogEntry:
  ^timestamp:Text
