@@ -2,7 +2,7 @@
 
 ---
 
-If you do not already have a Jargon account, you can create an account in order to create, use and share domains on the public Jargon site.
+You will need a Jargon account in order to create, use and share domains on the public Jargon site.
 
 ## Creating an account with Jargon
 

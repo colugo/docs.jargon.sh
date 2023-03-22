@@ -15,6 +15,6 @@
   - [The Jargon Editor](pages/the_jargon_editor)
   - [Data Definitions](pages/data_definitions)
   - [Code Tables](pages/code_tables)
-  - [Filtering Domains](pages/filtering)
+  - [API Paths](pages/api_paths)
 - Jargon Roadmap
   - [Business Rules](/pages/business_rules)
