@@ -16,5 +16,6 @@
   - [Data Definitions](pages/data_definitions)
   - [Code Tables](pages/code_tables)
   - [API Paths](pages/api_paths)
+  - [API Templates](pages/api_templates)
 - Jargon Roadmap
   - [Business Rules](/pages/business_rules)
