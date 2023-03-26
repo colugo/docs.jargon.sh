@@ -319,6 +319,7 @@ Here's a list of the currently supported processing instructions:
 - **#additionalRows:n** - adds n additional rows to the class, making it vertically larger
 - **#shortImports** - removes some of the prefix information on imported properties, making the classes less short and wide 
 - **#hideClass** - removes this class from the diagram. Useful for any mechanical classes that don't add to the understanding of the Domain 
+- **#localSupers** - shows the inherited properties from super classes in this domain 
 - **#noRoutes** - removes routes to this class from the diagram. Useful for decluttering many routes to mechanical classes that don't add to the understanding of the Domain 
 - **#route-PropertyName:my100 mx-200** - tweaks the routing of lines from this class to the class with the property name 'PropertyName'. You can tweak the position in the y direction (my) or the x direction(mx). This example adjusts the route down by 100 (my100) and left 200 (mx-200)
 - **#route-PropertyName:hide** - removes this route from the diagram 

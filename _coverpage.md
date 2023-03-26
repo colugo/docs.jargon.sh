@@ -1,5 +1,5 @@
-![logo](/static/img/jargon_wordmark.svg)
 
+![](/static/img/jargon_wallpaper.svg)
 
 # Help and documentation 
 
@@ -9,4 +9,3 @@
 [Get Started](#home)
 
 
-![](/static/img/docs.svg)
