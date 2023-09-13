@@ -49,6 +49,7 @@ Here is a list, and what they do:
 - **[jargon.minimum]=5** - adds 'minimum=5' to this property in an OpenAPI specification, and other outputs
 - **[jargon.maxItems]=5** - adds 'maxItems=5' to this property in an OpenAPI specification, and other outputs
 - **[jargon.minItems]=5** - adds 'minItems=5' to this property in an OpenAPI specification, and other outputs
+- **[jargon.abstract]=true** - If this is a super class, replaces the schema content with oneOf for each of the subClasses. 
 
 - **[oas.mediaType]=multipart/form-data** - changes the media type for this class, when it's in the body of a request. 
 - **[oas.exclusiveMaximum]=5** - adds 'exclusiveMaximum=5' to this property in an OpenAPI specification
@@ -58,7 +59,6 @@ Here is a list, and what they do:
 - **[oas.writeOnly]=true** - adds the 'writeOnly=true' to this property in an OpenAPI specification
 - **[oas.queryParamName]=x** - sets the name of this property, when used as an API query parameter. 
 - **[oas.compoundKeyName]=x** - changes the name of the compound key, if this class has multiple identifiers. 
-- **[oas.abstract]=true** - If this is a super class, replaces the schema content with oneOf for each of the subClasses. 
 - **[oas.securityScopeAcronym]=xx** - Creates a security scope for this resource, using the provided acronym. 
 - **[oas.x-enum-descriptions]=name** - if this property uses a Code Table, this allows you to select the column name to use in OpenAPI specifications for the x-enum-descriptions property
 
