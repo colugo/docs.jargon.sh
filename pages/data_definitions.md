@@ -50,6 +50,7 @@ Here is a list, and what they do:
 - **[jargon.maxItems]=5** - adds 'maxItems=5' to this property in an OpenAPI specification, and other outputs
 - **[jargon.minItems]=5** - adds 'minItems=5' to this property in an OpenAPI specification, and other outputs
 - **[jargon.abstract]=true** - If this is a super class, replaces the schema content with oneOf for each of the subClasses. 
+- **[jargon.jsonSchemaRoot]=true** - Exports this Class, and all its dependencies, into a JSONSchema file. 
 
 - **[oas.mediaType]=multipart/form-data** - changes the media type for this class, when it's in the body of a request. 
 - **[oas.exclusiveMaximum]=5** - adds 'exclusiveMaximum=5' to this property in an OpenAPI specification
