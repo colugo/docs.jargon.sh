@@ -17,5 +17,6 @@
   - [Code Tables](pages/code_tables)
   - [API Paths](pages/api_paths)
   - [API Templates](pages/api_templates)
+  - [Spectral Rulesets](pages/spectral)
 - Jargon Roadmap
   - [Business Rules](/pages/business_rules)
