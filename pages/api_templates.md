@@ -228,19 +228,19 @@ You will need to insert a security definition in **#/content/components/security
 		"paths": {},
 		"components": {
 			"schemas": {
-				"Template_ErrorSchema": {
+				"TemplateErrorSchema": {
 					"type": "object",
 					"properties": {
 						"errors": {
 							"type": "array",
 							"items": {
-								"$ref": "#/components/schemas/Template_Error"
+								"$ref": "#/components/schemas/TemplateError"
 							},
 							"description": ""
 						}
 					}
 				},
-				"Template_Error": {
+				"TemplateError": {
 					"type": "object",
 					"properties": {
 						"id": {
@@ -257,11 +257,11 @@ You will need to insert a security definition in **#/content/components/security
 							"description": ""
 						},
 						"source": {
-							"$ref": "#/components/schemas/Template_ErrorSource"
+							"$ref": "#/components/schemas/TemplateErrorSource"
 						}
 					}
 				},
-				"Template_ErrorSource": {
+				"TemplateErrorSource": {
 					"type": "object",
 					"properties": {
 						"pointer": {
@@ -306,7 +306,7 @@ You will need to insert a security definition in **#/content/components/security
 					"content": {
 						"application/json": {
 							"schema": {
-								"$ref": "#/components/schemas/Template_ErrorSchema"
+								"$ref": "#/components/schemas/TemplateErrorSchema"
 							},
 							"examples": {
 								"response": {
