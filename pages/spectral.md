@@ -87,3 +87,83 @@ rules:
             type: camel
  
 ```
+
+
+## Red Hat - Developer
+
+
+```yaml
+
+#adapted from https://github.com/redhat-developer/app-services-api-guidelines/blob/main/spectral/ruleset.yaml
+
+rules:
+  openapi-tags: off
+  operation-tags: off
+  oas3-valid-schema-example: warn
+  no-$ref-siblings: warn
+  oas3-valid-media-example: warn
+
+  rhoas-oas3minimum:
+    given: "$"
+    description: OpenAPI version must be >= 3
+    recommended: true
+    severity: warn
+    then:
+      field: openapi
+      function: pattern
+      functionOptions:
+        match: 3.[0-9]?.[0-9]
+
+  rhoas-path-regexp:
+    given: "$.paths[*]~"
+    severity: warn
+    message: API paths must match /api/ then a version
+    description:
+      OpenAPI paths must start with `/api/`, followed by a version. All paths
+      must follow snake_case
+    then:
+      function: pattern
+      functionOptions:
+        match: "\/api\/.*$"
+        
+  rhoas-response-media-type:
+    given: "$.paths.*.*.responses.*.content"
+    description: application/json is the only acceptable content type
+    severity: warn
+    then:
+      function: truthy
+      field: application/json
+  
+  rhoas-schema-name-pascal-case:
+    description: JSON Schema names should use PascalCase
+    message: "`{{property}}` object name must follow PascalCase"
+    severity: error
+    given: "$.components.schemas[*]~"
+    then:
+      function: pattern
+      functionOptions:
+        match: "^([A-Z]{1}[a-z]{1,}){1,}$"
+        
+  rhoas-schema-properties-snake-case:
+    description:
+      All JSON Schema properties MUST follow snake_case and be ASCII alphanumeric
+      characters.
+    severity: error
+    recommended: true
+    message: "`{{property}}` MUST follow snake_case and be ASCII alphanumeric characters."
+    given: "$.components.schemas..properties[*]~"
+    then:
+      function: pattern
+      functionOptions:
+        match: "/^[a-z0-9_]{1,}/"
+  
+  rhoas-operaton-id:
+    severity: warn
+    recommended: true
+    given: "$.paths.*.*"
+    then:
+      function: truthy
+      field: operationId
+
+```
+
