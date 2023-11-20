@@ -168,6 +168,44 @@ You will need to insert a security definition in **#/content/components/security
 }
 ```
 
+## Hypermedia
+
+Jargon supports HATEOAS links for GET responses. The configuration looks like this:
+
+```json
+{
+   "meta":{
+       "hateoas": {
+          "resource": {
+            "type": "object",
+            "properties": {
+              "data": "${body}",
+              "links": {
+                "$ref": "#/components/schemas/LinkObject"
+              }
+            }
+          },
+          "responseProperties": {
+            "individual": {
+              "_id": {
+                "type": "number"
+              }
+            },
+            "array": {
+              "_count": {
+                "type": "number"
+              }
+            }
+          }
+        }
+    }
+}
+```
+
+All GET responses will be wrapped with the JSON in meta.hateoas.resource, replacing ${body} with the previous response.
+
+Depedning on the return type, the properties in meta.hateoas.responseProperties.individual will be added for a single resource, or meta.hateoas.responseProperties.array for arrays.
+
 
 ## Sample Template
 
