@@ -55,6 +55,7 @@ Here is a list, and what they do:
 - **[jargon.routeX]=100** - Moves the routing for the property left and right. 
 - **[jargon.routeY]=-100** - Moves the routing for the property up and down. 
 
+- **[oas.additionalProperties]=true** - adds additionalProperties:true to this class in the API / JSONSchema. 
 - **[oas.mediaType]=multipart/form-data** - changes the media type for this class, when it's in the body of a request. 
 - **[oas.exclusiveMaximum]=5** - adds 'exclusiveMaximum=5' to this property in an OpenAPI specification
 - **[oas.exclusiveMinimium]=5** - adds 'exclusiveMinimium=5' to this property in an OpenAPI specification
