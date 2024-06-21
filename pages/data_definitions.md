@@ -39,8 +39,8 @@ Recognised keys are highlighted in yellow.
 Here is a list, and what they do:
 - **[jargon.aggregation]=true** - When used on a property that is a Class, aggregate up all the type's properties to the parent 
 - **[jargon.required]=true** - Makes this property required. Also adds the 'required=true' to this property in an OpenAPI specification
-- **[jargon.reference]=true** - Treats a child property, which is a class (or an array of classes) as a reference pointer to that class, using the child's class ID. 
-- **[jargon.deprecated]=true** - Marks this property as deprecatd, flagging that it may be removed in the future. 
+- **[jargon.reference]=true** - Treats a child property, which is a class (or an array of classes) as a reference pointer to that class, using the child's class ID
+- **[jargon.deprecated]=true** - Marks this property as deprecatd, flagging that it may be removed in the future
 - **[jargon.extraEnums]=x,y,z** - Adds extra enumeration values to this usage of a CodeTable. Useful when you are using an imported CodeTable, and you need to add some mechanical values, such as 'None', or 'n/a'
 - **[oas.codeColumn]=name** - if this property uses a Code Table, this allows you to select the name of the column that is used 
 - **[jargon.maxLength]=5** - adds 'maxLength=5' to this property in an OpenAPI specification, and other outputs
@@ -49,23 +49,38 @@ Here is a list, and what they do:
 - **[jargon.minimum]=5** - adds 'minimum=5' to this property in an OpenAPI specification, and other outputs
 - **[jargon.maxItems]=5** - adds 'maxItems=5' to this property in an OpenAPI specification, and other outputs
 - **[jargon.minItems]=5** - adds 'minItems=5' to this property in an OpenAPI specification, and other outputs
-- **[jargon.abstract]=true** - If this is a super class, replaces the schema content with oneOf for each of the subClasses. 
-- **[jargon.jsonSchemaRoot]=true** - Exports this Class, and all its dependencies, into a JSONSchema file. 
-- **[jargon.hideRoute]=true** - Removes the route from the diagram, when used on a property. 
-- **[jargon.routeX]=100** - Moves the routing for the property left and right. 
-- **[jargon.routeY]=-100** - Moves the routing for the property up and down. 
+- **[jargon.abstract]=true** - If this is a super class, replaces the schema content with oneOf for each of the subClasses
+- **[jargon.jsonSchemaRoot]=true** - Exports this Class, and all its dependencies, into a JSONSchema file
+- **[jargon.jsonldLdContext]=true** - Generates a JSONLD @Context file for this Class
+- **[jargon.hideRoute]=true** - Removes the route from the diagram, when used on a property
+- **[jargon.routeX]=100** - Moves the routing for the property left and right
+- **[jargon.routeY]=-100** - Moves the routing for the property up and down
+- **[jargon.showImportedClass]=true** - Adds the imported class from this property to the diagram
+- **[jargon.stateTransitions]=true** - Generate state transition API paths based on the lifecycle for this property
 
-- **[oas.additionalProperties]=true** - adds additionalProperties:true to this class in the API / JSONSchema. 
-- **[oas.mediaType]=multipart/form-data** - changes the media type for this class, when it's in the body of a request. 
+
+- **[oas.additionalProperties]=true** - adds additionalProperties:true to this class in the API / JSONSchema
+- **[oas.mediaType]=multipart/form-data** - changes the media type for this class, when it's in the body of a request
 - **[oas.exclusiveMaximum]=5** - adds 'exclusiveMaximum=5' to this property in an OpenAPI specification
 - **[oas.exclusiveMinimium]=5** - adds 'exclusiveMinimium=5' to this property in an OpenAPI specification
 - **[oas.pathName]=newPathChunk** - changes the name of this resource in API paths to the verbatim value provided 
 - **[oas.readOnly]=true** - adds the 'readOnly=true' to this property in an OpenAPI specification
 - **[oas.writeOnly]=true** - adds the 'writeOnly=true' to this property in an OpenAPI specification
-- **[oas.queryParamName]=x** - sets the name of this property, when used as an API query parameter. 
-- **[oas.compoundKeyName]=x** - changes the name of the compound key, if this class has multiple identifiers. 
-- **[oas.securityScopeAcronym]=xx** - Creates a security scope for this resource, using the provided acronym. 
+- **[oas.queryParamName]=x** - sets the name of this property, when used as an API query parameter
+- **[oas.compoundKeyName]=x** - changes the name of the compound key, if this class has multiple identifiers
+- **[oas.securityScopeAcronym]=xx** - Creates a security scope for this resource, using the provided acronym
 - **[oas.x-enum-descriptions]=name** - if this property uses a Code Table, this allows you to select the column name to use in OpenAPI specifications for the x-enum-descriptions property
+- **[oas.includeClass]=true** - Force this class to be included in the OpenAPI specification 
+
+
+- **[sql.type]=varchar** - Force the generated SQL column type for this property
+
+
+- **[jsonld.contextOmit]=true** - Do not include this property in the @Context file 
+- **[jsonld.contextPrefix]=prefix** Force a prefix in @Context file
+- **[jsonld.contextURI]=https://..** Force URI in @Context file
+- **[jsonld.contextLocalName]=Name** Force local name in @Context file
+
 
 
 ## Writing Data Definitions
