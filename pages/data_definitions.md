@@ -49,9 +49,10 @@ Here is a list, and what they do:
 - **[jargon.minimum]=5** - adds 'minimum=5' to this property in an OpenAPI specification, and other outputs
 - **[jargon.maxItems]=5** - adds 'maxItems=5' to this property in an OpenAPI specification, and other outputs
 - **[jargon.minItems]=5** - adds 'minItems=5' to this property in an OpenAPI specification, and other outputs
+- **[jargon.example]=5** - adds 'example=5' to this property in an OpenAPI specification, and other outputs
+- **[jargon.pattern]=^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$** - adds a pattern value to this property in an OpenAPI specification, and other outputs
 - **[jargon.abstract]=true** - If this is a super class, replaces the schema content with oneOf for each of the subClasses
 - **[jargon.jsonSchemaRoot]=true** - Exports this Class, and all its dependencies, into a JSONSchema file
-- **[jargon.jsonldLdContext]=true** - Generates a JSONLD @Context file for this Class
 - **[jargon.hideRoute]=true** - Removes the route from the diagram, when used on a property
 - **[jargon.routeX]=100** - Moves the routing for the property left and right
 - **[jargon.routeY]=-100** - Moves the routing for the property up and down
