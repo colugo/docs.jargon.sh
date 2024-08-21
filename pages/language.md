@@ -353,4 +353,52 @@ You can also comment out many lines, by using /* and */
 </div>
 
 
+
+# Interfaces
+
+
+Interfaces in Jargon allow you to define shared properties across multiple classes, and a class can implement multiple interfaces. This is particularly useful for handling complex relationships, that require a more flexible structure than what superclasses alone can provide.
+
+
+![Sample diagram of interfaces](../static/media/interfaces.png)
+
+<div class="jargon_code"><pre><code>
+<span class="jargon_class jargon_Interface">Purchasable</span><span>:</span><span class="jargon_class jargon_implements">interface</span>
+ price:<span class="jargon_Datatype">Decimal</span>
+ availability:<span class="jargon_Datatype">Text</span>
+
+<span class="jargon_class jargon_Interface">DigitalProduct</span><span>:</span><span class="jargon_class jargon_implements">interface</span> <span class="jargon_implements">implements</span> <span class="jargon_class jargon_Interface">Purchasable</span>
+ price:<span class="jargon_Datatype">Decimal</span>
+ availability:<span class="jargon_Datatype">Text</span>
+ downloadLink:<span class="jargon_Datatype">URI</span>
+
+<span class="jargon_class jargon_Interface">PhysicalProduct</span><span>:</span><span class="jargon_class jargon_implements">interface</span> <span class="jargon_implements">implements</span> <span class="jargon_class jargon_Interface">Purchasable</span>
+ price:<span class="jargon_Datatype">Decimal</span>
+ availability:<span class="jargon_Datatype">Text</span>
+ weight:<span class="jargon_Datatype">URI</span>
+ dimensions:<span class="jargon_Datatype">Text</span>
+
+<span class="jargon_class jargon_ValueObject">Book</span> <span class="jargon_implements">implements</span> <span class="jargon_class jargon_Interface">PhysicalProduct</span>
+ price:<span class="jargon_Datatype">Decimal</span>
+ availability:<span class="jargon_Datatype">Text</span>
+ weight:<span class="jargon_Datatype">URI</span>
+ dimensions:<span class="jargon_Datatype">Text</span>
+ title:<span class="jargon_Datatype">Text</span>
+ author:<span class="jargon_Datatype">Text</span>
+
+<span class="jargon_class jargon_ValueObject">EBook</span> <span class="jargon_implements">implements</span> <span class="jargon_class jargon_Interface">DigitalProduct</span>
+ price:<span class="jargon_Datatype">Decimal</span>
+ availability:<span class="jargon_Datatype">Text</span>
+ downloadLink:<span class="jargon_Datatype">URI</span>
+ title:<span class="jargon_Datatype">Text</span>
+ author:<span class="jargon_Datatype">Text</span>
+
+<span class="jargon_class jargon_ValueObject">Store</span>
+ items:<span class="jargon_Interface">Purchasable[]</span>
+</code>
+</pre>
+</div>
+
+
+
 ---
