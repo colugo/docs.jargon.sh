@@ -40,6 +40,7 @@ Here is a list, and what they do:
 - **[jargon.aggregation]=true** - When used on a property that is a Class, aggregate up all the type's properties to the parent 
 - **[jargon.required]=true** - Makes this property required. Also adds the 'required=true' to this property in an OpenAPI specification
 - **[jargon.reference]=true** - Treats a child property, which is a class (or an array of classes) as a reference pointer to that class, using the child's class ID
+- **[jargon.objectReference]=id,name,weight,...** - Treats a child property, which is a class (or an array of classes) as a reference object to that class, containing the comma-separated list of property names 
 - **[jargon.deprecated]=true** - Marks this property as deprecatd, flagging that it may be removed in the future
 - **[jargon.extraEnums]=x,y,z** - Adds extra enumeration values to this usage of a CodeTable. Useful when you are using an imported CodeTable, and you need to add some mechanical values, such as 'None', or 'n/a'
 - **[oas.codeColumn]=name** - if this property uses a Code Table, this allows you to select the name of the column that is used 
