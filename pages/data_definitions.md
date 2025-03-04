@@ -81,10 +81,11 @@ Here is a list, and what they do:
 
 
 - **[jsonld.contextOmit]=true** - Do not include this property in the @Context file 
-- **[jsonld.contextPrefix]=prefix** Force a prefix in @Context file
-- **[jsonld.contextURI]=https://..** Force URI in @Context file
+- **[jsonld.contextPrefix]=prefix** Force a prefix in @Context file. Must also use [jsonld.contextURI] in the same property.
+- **[jsonld.contextURI]=https://..** Force URI in @Context file. Must also use [jsonld.contextPrefix] in the same property.
 - **[jsonld.contextLocalName]=Name** Force local name in @Context file
 
+- **[json.sampleOmit]=true** Don't include this property in json sample data 
 
 
 ## Writing Data Definitions
