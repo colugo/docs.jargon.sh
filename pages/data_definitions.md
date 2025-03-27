@@ -61,6 +61,7 @@ Here is a list, and what they do:
 - **[jargon.stateTransitions]=true** - Generate state transition API paths based on the lifecycle for this property
 - **[jargon.extension]=true** - This is an extension point. No JSONSchema or similar rules will be added to this Class. Implementers can add their own content and it will still pass validation 
 - **[jargon.constant]=Foo** - This property has a constant string value of Foo 
+- **[jargon.means]=alias.class.property** - Changes the semantic reference for this property 
 
 
 - **[oas.additionalProperties]=true** - adds additionalProperties:true to this class in the API / JSONSchema
