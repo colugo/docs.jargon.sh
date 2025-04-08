@@ -87,6 +87,8 @@ Here is a list, and what they do:
 - **[jsonld.contextLocalName]=Name** Force local name in @Context file
 
 - **[json.sampleOmit]=true** Don't include this property in json sample data 
+- **[rdf.triple:prefix:predicate]=object** Adds a custom triple to the subject. Use with #rdf.prefix ProcessingInstruction
+
 
 
 ## Writing Data Definitions

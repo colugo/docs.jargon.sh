@@ -323,6 +323,10 @@ Here's a list of the currently supported processing instructions:
 - **#noRoutes** - removes routes to this class from the diagram. Useful for decluttering many routes to mechanical classes that don't add to the understanding of the Domain 
 - **#group:x** - draws a bounding box around all classes that are in the same group 
 
+And a list of processing instructions that apply to the domain, not on classes    
+
+- **#rdf.prefix.{prefix}:{uri}** - adds a RDF prefix to RDF outputs, eg: #rdf.prefix.skos:http://www.w3.org/2004/02/skos/core#
+
 
 
 # Comments 
