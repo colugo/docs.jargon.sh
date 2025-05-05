@@ -79,6 +79,8 @@ Here is a list, and what they do:
 
 
 - **[sql.type]=varchar** - Force the generated SQL column type for this property
+- **[sql.default]=foo** - Gives this column a default vaue 
+- **[sql.unique]=true** - Marks this column as unique 
 
 
 - **[jsonld.contextOmit]=true** - Do not include this property in the @Context file 
