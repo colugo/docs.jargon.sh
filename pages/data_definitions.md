@@ -88,6 +88,8 @@ Here is a list, and what they do:
 - **[jsonld.contextPrefix]=prefix** Force a prefix in @Context file. Must also use [jsonld.contextURI] in the same property.
 - **[jsonld.contextURI]=https://..** Force URI in @Context file. Must also use [jsonld.contextPrefix] in the same property.
 - **[jsonld.contextLocalName]=Name** Force local name in @Context file
+- **[jsonld.context.@type]=xsd:String** - Force the @type to be something else 
+- **[jsonld.context.@typeOmit]=true** - Omit the @type 
 
 - **[json.sampleOmit]=true** Don't include this property in json sample data 
 - **[rdf.triple:prefix:predicate]=object** Adds a custom triple to the subject. Use with #rdf.prefix ProcessingInstruction
