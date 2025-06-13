@@ -326,6 +326,7 @@ Here's a list of the currently supported processing instructions:
 And a list of processing instructions that apply to the domain, not on classes    
 
 - **#rdf.prefix.{prefix}:{uri}** - adds a RDF prefix to RDF outputs, eg: #rdf.prefix.skos:http://www.w3.org/2004/02/skos/core#
+- **#jsonld.context.{key}:{value}** - adds a key to the JSON-LD root context, eg: #jsonld.context.id:@id
 
 
 
